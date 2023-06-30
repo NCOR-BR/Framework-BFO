@@ -1,0 +1,2079 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/d-acts.owl/"
+     xml:base="http://purl.obolibrary.org/obo/iao/d-acts.owl/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2022-07-05/d-acts.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
+        <obo:IAO_0000597 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
+        <dc:contributor>Cooper Stansbury</dc:contributor>
+        <dc:contributor>J. Neil Otte</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <dc:contributor>S. Clint Dowland</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <dc:creator>Amanda Hicks</dc:creator>
+        <dc:creator>Laura Slaughter</dc:creator>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <dc:creator>Mauricio B. Almeida</dc:creator>
+        <dc:description xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&apos;s theory of social acts and legal entities:
+
+Reinach, A. (1989), Sämtliche Werke. Texkritische Ausgabe, Edited by Karl Schuhmann and Barry Smith, München: Philosophia Verlag.
+
+Smith, B. (2008) “Searle and de Soto: The new ontology of the social world”, The Mystery of Capital and the Construction of Social Reality, B. Smith, D.M. Mark  and I. Ehrlich, United States, Open Court., 35-52.
+
+Smith, B. (2012) &quot;How to Do Things With Documents&quot;, Rivista di estetica, 50 (2/2012), LII: 179-198.
+
+However, there are some amendments from our side which are to be found in the documentation.</dc:description>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:source xml:lang="pt">Tradução para português: professor Mauricio Almeida (mba@eci.ufmg.br)</dc:source>
+        <dc:title xml:lang="en">document act ontology</dc:title>
+        <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
+        <owl:versionInfo xml:lang="en">2022-07-05</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label>definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdfs:label xml:lang="pt">tem parte</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000111 xml:lang="en">realized in</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this disease is realized in this disease course</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this fragility is realized in this shattering</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
+        <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ro.owl</obo:IAO_0000412>
+        <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
+        <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="pt">realizado em</rdfs:label>
+        <rdfs:label xml:lang="en">realized in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="pt">realiza</rdfs:label>
+        <rdfs:label xml:lang="en">realizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:label xml:lang="pt">é sobre</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021011 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0021011">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0021009"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <obo:IAO_0000115 xml:lang="en">d socio-legally revokes s if s participates in d and at the end of d s no longer exists.
+It is important to note that this going out of existence of s is complete and unlike the going out of existence for material entities which basically always are transformed into something else. After the declaration nothing is left of the socio-legal generically dependent continuant in question.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">legally revokes</rdfs:label>
+        <rdfs:label xml:lang="pt">revoga legalmente</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021012 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0021012">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">d socio-legally transfers l if l participates in d and d has specified input  (concretization of l)1 and specified output  (concretization of l)2, where (concretization of l)1 and (concretization of l)2 are not identical.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+        <rdfs:label xml:lang="en">obsolete_legally transfers</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
+        <rdfs:label xml:lang="pt">tem entrada específica</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
+        <rdfs:label xml:lang="pt">tem saida específica</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000020 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000020">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000231 xml:lang="en">BFO relation takes precedence.</obo:IAO_0000231>
+        <rdfs:comment xml:lang="en">We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
+</rdfs:comment>
+        <rdfs:label>is-aggregate-of</rdfs:label>
+        <rdfs:label xml:lang="pt">é agregado de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <rdfs:label xml:lang="pt">característica de</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <rdfs:label xml:lang="pt">tem característica</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <rdfs:label xml:lang="pt">participa em</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:label xml:lang="pt">tem participante</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000058">
+        <rdfs:label xml:lang="pt">é concretizado como</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000059">
+        <rdfs:label xml:lang="pt">concretiza</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002218 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002218">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000112>&apos;heart development&apos; has active participant some Shh protein</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>x has participant y if and only if x realizes some active role that inheres in y</obo:IAO_0000115>
+        <obo:IAO_0000116>This may be obsoleted and replaced by the original &apos;has agent&apos; relation</obo:IAO_0000116>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000118>has agent</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ro.owl</obo:IAO_0000412>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:label xml:lang="en">has active participant</rdfs:label>
+        <rdfs:label xml:lang="pt">tem participante ativo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibary.org/obo/IAO_0021001 -->
+
+    <owl:Class rdf:about="http://purl.obolibary.org/obo/IAO_0021001">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000112 xml:lang="en">my filling in an immigration form, a judge&apos;s signing and stamping a court order</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A deontic declaration creating or revoking a deontic role by lawfully manipulating (signing, stamping, publishing) a document.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <rdfs:label xml:lang="en">obsolete_deontic document act</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:label xml:lang="pt">processo</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:label xml:lang="pt">continuante especificamente dependente</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:label xml:lang="pt">papel</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:label xml:lang="pt">entidade material</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:label xml:lang="pt">item de dados</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:label xml:lang="pt">entidade de conteúdo informacional</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
+        <rdfs:label xml:lang="pt">documento</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020021">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020022"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020024"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020024"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115 xml:lang="en">A document that denotes some identity and is concretized by the bearer of some credential role.</obo:IAO_0000115>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="pt">documento de identidade</rdfs:label>
+        <rdfs:label xml:lang="en">identity document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020021"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents.</obo:IAO_0000115>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">is an aggregate of ICEs also an ICE? yes
+Is part_of the appropriate relation to use for data items and documented identities?</rdfs:comment>
+        <rdfs:label xml:lang="en">documented identity</rdfs:label>
+        <rdfs:label xml:lang="pt">identidade documentada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020024"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112> I order a beer and the bartender authenticates my age by looking at my DOB on my driver&apos;s license.  I sign into my email account, and the system authenticates my permission to read the email by checking the password I enter against my password listed in the database.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit).
+</obo:IAO_0000115>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="pt">autenticação</rdfs:label>
+        <rdfs:label xml:lang="en">authentication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020024">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020023"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020021"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a concretization of an identity document and is realized by an authentication process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">credential role</rdfs:label>
+        <rdfs:label xml:lang="pt">papel de credencial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020025">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000111 xml:lang="en">obligor role</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Sam&apos;s obligor role realized by him taking Nigel to lunch after promising to do so; Sarah&apos;s obligor role realized by paying the purchase price to Layla after signing the contract specifying that she is buying a piece of land from Layla.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A role that is the specified output of an obligation generating social act and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000117>Sarah Bost</obo:IAO_0000117>
+        <obo:IAO_0100001>duty holder role (IAO:210016)</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete obligor role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020026">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000111 xml:lang="en">obligee role</obo:IAO_0000111>
+        <obo:IAO_0000112>Nigel&apos;s obligee role realized by Sam taking him out for lunch after Sam so promised; Layla&apos;s obligee role realized by receiving the money after signing a contract in which Sarah obtained a piece of land in exchange for a specified sum of money.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A role that is the specified output of an obligation generating social act and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000117>Sarah Bost</obo:IAO_0000117>
+        <obo:IAO_0100001>claimant role (IAO:0021013)</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete obligee role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
+        <obo:IAO_0000112 xml:lang="en">Tammy&apos;s owner role with regards to the house on 234 Evergreen Terrace; Walter&apos;s owner role with regards to the intellectual property on his movie script</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A role in a human social process that is based on a social act and whose bearer exercises exclusive control over a property, where this control is permitted by one or more deontic roles, which are parts of the owner role.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBIB/ICO community</obo:IAO_0000119>
+        <obo:IAO_0000119>https://github.com/d-acts/d-acts/issues/29</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">owner role</rdfs:label>
+        <rdfs:label xml:lang="pt">papel de proprietário</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021000">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <rdfs:label xml:lang="en">obsolete_claim</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021001">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0021009"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021007"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021009"/>
+        <obo:IAO_0000112 xml:lang="en">my filling in an immigration form, a judge&apos;s signing and stamping a court order</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A deontic declaration creating or revoking a deontic role by lawfully manipulating (signing, stamping, publishing) a document.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="pt">ato de documento deôntico</rdfs:label>
+        <rdfs:label xml:lang="en">deontic document act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021002">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000112 xml:lang="en">my filling in an immigration form, a judge&apos;s signing and stamping a court order</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A social act creating, revoking or transferring a socio-legal generically dependent continuant or a role by validating (signing, stamping, publishing) a document.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibary.org/obo/IAO_0021001"/>
+        <rdfs:label xml:lang="en">obsolete_document act</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000112 xml:lang="en">Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A planned process that is carried out by a conscious being or an organization, and is self-generated, directed towards another conscious being or an aggregate of conscious beings, an organization or an aggregate of organizations, and that is in need of being perceived.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">The phrase &quot;in need of being perceived&quot; does not imply that only planned processes that are in fact perceived can be social acts. Reinach clarifies that by exemplifying these matters for commands: &quot;The command is according to its essence in need of being heard (vernehmungsbedürtig&quot;. It can of course happen that commands are given without being heard. Then they fail to fulfil their purpose. They are like thrown spears which fall to the ground without hitting their target.&quot; (A. Reinach: The Apriori Foundations of the Civil Law.&quot; Edited by J. Crosby, Heusenstamm: ontos Verlag, 2012).
+Reinach clearly does not imply that a command that does not fulfill its prupose would not be a command.
+Thanks to W.R. Hogan for finding the Reinach quote.</rdfs:comment>
+        <rdfs:label xml:lang="pt">ato social</rdfs:label>
+        <rdfs:label xml:lang="pt">declaração deôntica</rdfs:label>
+        <rdfs:label xml:lang="en">social act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021004">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000112 xml:lang="en">the claim of a piece of land, the obligation to pay rent to the owner of a rental property</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Socio-legal generically dependent continuants are generically dependent continuants that come into existence through social acts and that if they get concretized are concretized as realizable entities.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">obsolete_socio-legal generically dependent continuant</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021005">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000111 xml:lang="en">deontic declaration</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">my consenting verbally to buy a used TV set for $ 500, John Robie&apos;s taking of Mrs. Steven&apos;s jewels, Jane Doe&apos;s revoking of informed consent over the phone, John Doe signing an employment contract.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A social act that brings about, transfers or revokes a socio-legal generically dependent continuant or brings about or transforms a role. Declarations do not depend on words spoken or written, but sometimes are merely actions, for instance the signing of a document.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">declaration</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">status function declaration</obo:IAO_0000118>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+        <rdfs:label xml:lang="en">obsolete_deontic declaration</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021006">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">obsolete obligee role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115 xml:lang="en">A document that is intended to be the specified input in a document act. It has a plan specification as a part that specifies the intended socio-legal entities that are created through the document (objective specification) and the way in which the document act is to be performed (by signing, by stamping, etc.) (action specification).</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">document act input document</rdfs:label>
+        <rdfs:label xml:lang="pt">documento de entrada do ato do documento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in an agent and which is externally grounded in the normative expectations that other agents within a social context have concerning how that agent should behave.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Neil Otte</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">deontic role</rdfs:label>
+        <rdfs:label xml:lang="pt">papel deôntico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021009">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0021011"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
+        <obo:IAO_0000115>A social act that creates or revokes a deontic role.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="pt">declaração deôntica</rdfs:label>
+        <rdfs:label xml:lang="en">deontic declaration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021010">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <rdfs:label xml:lang="en">obsolete_obligation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <obo:IAO_0000115 xml:lang="en">A deontic role that inheres in an agent A, that mutually depends on the existence of a duty holder role borne by agent B, and that specifies B doing or abstaining from C, or providing or surrendering C to A.</obo:IAO_0000115>
+        <obo:IAO_0000117>J. Neil Otte</obo:IAO_0000117>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
+        <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">Claimant roles can either be discharged by one act of fulfilling a duty (e.g. when I pay back $5 owed to a friend) or they can remain intact and require ongoing adhering to a duty. 
+https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the claim of a child to freedom from abuse. That claim remains in existence and the duty to not abuse the child needs to be continuously be acted upon, by a multitude of agents (which all have a duty holder role). This claim is mutually dependent on the duty to abstain from abusing the child.</rdfs:comment>
+        <rdfs:label xml:lang="en">claimant role</rdfs:label>
+        <rdfs:label xml:lang="pt">papel de reclamante</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021014">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115 xml:lang="en">The role borne by a human being, an organization or an aggregate of either of both that is realized by being the active participant in a declaration.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <rdfs:label xml:lang="en">obsolete_declaration executive role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021015">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000112 xml:lang="en">the role borne by the US Citizen and Immigration Service realized by providing the template form for entering the US as a non-resident alien, the role of a guideline committee in putting together a clinical guideline</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings preparing the initial document to undergo a document act, thus creating a socio-legal generically dependent continuant.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <rdfs:comment xml:lang="en">not that the &quot;template&quot; does not need to be a template at all. It can be a document that is getting stamped and signed and by these acts creating some socio-legal generically dependent continuants.</rdfs:comment>
+        <rdfs:label xml:lang="en">obsolete_document template creator role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <obo:IAO_0000115 xml:lang="en">A deontic role that inheres in an agent A, that mutually depends on the existence of a claimant role borne by agent B, and that specifies A doing or abstaining from some acition C, or providing or surrendering C to B.</obo:IAO_0000115>
+        <obo:IAO_0000117>J. Neil Otte</obo:IAO_0000117>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
+        <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">duty holder role</rdfs:label>
+        <rdfs:label xml:lang="pt">papel do titular do dever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021017">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings concretizing a claim.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <rdfs:label xml:lang="en">obsolete_claimant role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021018">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings  concretizing an obligation.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <rdfs:label xml:lang="en">obsolete_obligator role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <obo:IAO_0000115 xml:lang="en">A deontic role that inheres in an agent A, that specifies that no agent B bears a claimant role against A doing C.</obo:IAO_0000115>
+        <obo:IAO_0000117>J. Neil Otte</obo:IAO_0000117>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
+        <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt">função de detentor de privilégio</rdfs:label>
+        <rdfs:label xml:lang="en">privilege holder role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021020">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000112 xml:lang="en">me as a bearer of a spouse role, which participates in a document act, John Doe as bearer of a debtor role, which participates in a document act</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+        <rdfs:label xml:lang="en">obsolete_declaration target</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021001"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The role of the U.S. Citizenship and Immigration Service realized by the creation of an immigration form that is being filled in, the role of a national professional association realized by the creation of a clinical guideline that is to be certified</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a human being or organization or aggregate of any of the aforementioned that prepares a document that is the specified input to a document act and is the input document of a document act.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">document act template creator role</rdfs:label>
+        <rdfs:label xml:lang="pt">função de criador de modelo de ato de documento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a declaration.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">declaration performer role</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">deontic declaration performer role</rdfs:label>
+        <rdfs:label xml:lang="pt">papel de executor da declaração deôntica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <obo:IAO_0000115 xml:lang="en">A deontic role that, if realized, is realized by its bearer’s creating, altering, or annulling some deontic role.</obo:IAO_0000115>
+        <obo:IAO_0000117>J. Neil Otte</obo:IAO_0000117>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
+        <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt">papel de poder</rdfs:label>
+        <rdfs:label xml:lang="en">power role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021030">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115>The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">obsoleted_document act target</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">a judge&apos;s role of signing a court order</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a document act.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">document act performer role</rdfs:label>
+        <rdfs:label xml:lang="pt">papel do executor do ato do documento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021032">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+        <rdfs:label xml:lang="en">obsolete_obligee role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021033">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+        <rdfs:label xml:lang="en">obsolete_obligor role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
+        <obo:IAO_0000115 xml:lang="en">A social act that postulates a socio-legal fact for a specified group of people or organizations.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">enactment</obo:IAO_0000118>
+        <rdfs:label xml:lang="pt">declaração permanente</rdfs:label>
+        <rdfs:label xml:lang="en">standing declaration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021300">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">obsolete obligor role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <obo:IAO_0000111 xml:lang="en">Homo sapiens</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human being</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
+        <rdfs:label xml:lang="pt">Homo sapiens</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:label xml:lang="pt">processo planejado</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111 xml:lang="en">organization</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:
+
+1) there are organization_member_roles (president, treasurer, branch
+editor), with individual persons as bearers
+
+2) there are organization_roles (employer, owner, vendor, patent holder)
+
+3) an organization has a charter / rules / bylaws, which specify what roles
+there are, how they should be realized, and how to modify the
+charter/rules/bylaws themselves.
+
+It is debatable what the organization itself is (some kind of dependent
+continuant or an aggregate of people). This also determines who/what the
+bearer of organization_roles&apos; are. My personal favorite is still to define
+organization as a kind of &apos;legal entity&apos;, but thinking it through leads to
+all kinds of questions that are clearly outside the scope of OBI.
+
+Interestingly enough, it does not seem to matter much where we place
+organization itself, as long as we can subclass it (University, Corporation,
+Government Agency, Hospital), instantiate it (Affymetrix, NCBI, NIH, ISO,
+W3C, University of Oklahoma), and have it play roles.
+
+This leads to my proposal: We define organization through the statements 1 -
+3 above, but without an &apos;is a&apos; statement for now. We can leave it in its
+current place in the is_a hierarchy (material entity) or move it up to
+&apos;continuant&apos;. We leave further clarifications to BFO, and close this issue
+for now.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Susanna Sansone</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP: OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">organization</rdfs:label>
+        <rdfs:label xml:lang="pt">organização</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <obo:IAO_0000111 xml:lang="en">organism</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">animal</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">fungus</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">plant</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000121"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13-02-2009:
+OBI doesn&apos;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
+This issue is outside the scope of OBI.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+        <rdfs:label xml:lang="pt">organismo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000022">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">An object aggregate of organisms.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  </rdfs:comment>
+        <rdfs:label xml:lang="pt">coleção de organismos</rdfs:label>
+        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000022"/>
+        <rdfs:comment xml:lang="en">An object aggregate all of whose components are human beings.</rdfs:comment>
+        <rdfs:label xml:lang="pt">coleção de humanos</rdfs:label>
+        <rdfs:label xml:lang="en">collection of humans</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/omrse.owl</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
+        <rdfs:label xml:lang="pt">papel nos processos sociais humanos</rdfs:label>
+        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">An aggregate of organizations that have some feature in common, but is not itself an organization.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan
+Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">It is often convenient to group organizations together that otherwise might not even interact with one another. </rdfs:comment>
+        <rdfs:label xml:lang="en">aggregate of organizations</rdfs:label>
+        <rdfs:label xml:lang="pt">agregado de organizações</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">obsolete obligee role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">obsolete obligor role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000008">
+        <rdfs:label xml:lang="pt">desenvolvimento de software</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032">
+        <rdfs:label xml:lang="pt">conta</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000033">
+        <rdfs:label xml:lang="pt">contagem</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000522">
+        <rdfs:label xml:lang="pt">repositório de código fonte</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000524">
+        <rdfs:label xml:lang="pt">compilar software</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000796">
+        <rdfs:label xml:lang="pt">criar conjunto de dados</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:label xml:lang="pt">entidade</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:label xml:lang="pt">continuante</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+        <rdfs:label xml:lang="pt">ocorrente</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:label xml:lang="pt">continuante independente</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
+        <rdfs:label xml:lang="pt">região espacial</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000008">
+        <rdfs:label xml:lang="pt">região temporal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000011">
+        <rdfs:label xml:lang="pt">região espaço-temporal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+        <rdfs:label xml:lang="pt">disposição</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:label xml:lang="pt">entidade realizável</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:label xml:lang="pt">qualidade</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
+        <rdfs:label xml:lang="pt">parte fiat de objeto</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
+        <rdfs:label xml:lang="pt">objeto agregado</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
+        <rdfs:label xml:lang="pt">site</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030">
+        <rdfs:label xml:lang="pt">objeto</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:label xml:lang="pt">continuante genericamente dependente</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+        <rdfs:label xml:lang="pt">função</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
+        <rdfs:label xml:lang="pt">limite de processo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000038">
+        <rdfs:label xml:lang="pt">região temporal unidimensional</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdfs:label xml:lang="pt">parte de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
+        <rdfs:label xml:lang="pt">ocorre em</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000067">
+        <rdfs:label xml:lang="pt">contém processo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140">
+        <rdfs:label xml:lang="pt">limite fiat de continuante</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:label xml:lang="pt">entidade imaterial</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000144">
+        <rdfs:label xml:lang="pt">perfil de processo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000145">
+        <rdfs:label xml:lang="pt">qualidade relacional</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000148">
+        <rdfs:label xml:lang="pt">região temporal zero-dimensional</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000182">
+        <rdfs:label xml:lang="pt">história</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FMA_49443">
+        <rdfs:label xml:lang="pt">Aglomerado anatômico</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FMA_55457">
+        <rdfs:label xml:lang="pt">prega vocal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FMA_64854">
+        <rdfs:label xml:lang="pt">Subdivisão da laringe</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FMA_64989">
+        <rdfs:label xml:lang="pt">Aglomerado heterogêneo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000001">
+        <rdfs:label xml:lang="pt">especificação condicional</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
+        <rdfs:label xml:lang="pt">rótulo de unidade de medida</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
+        <rdfs:label xml:lang="pt">especificação objetiva</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000006">
+        <rdfs:label xml:lang="pt">objeto narrativo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
+        <rdfs:label xml:lang="pt">especificação de ação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
+        <rdfs:label xml:lang="pt">rótulo de dado</rdfs:label>
+        <rdfs:label xml:lang="pt">entidade de informação diretiva</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
+        <rdfs:label xml:lang="pt">software</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000013">
+        <rdfs:label xml:lang="pt">artigo de períodico</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000015">
+        <rdfs:label xml:lang="pt">portador de informação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000017">
+        <rdfs:label xml:lang="pt">número de modelo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000025">
+        <rdfs:label xml:lang="pt">linguagem de programação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000028">
+        <rdfs:label xml:lang="pt">símbolo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000029">
+        <rdfs:label xml:lang="pt">numeral</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000031">
+        <rdfs:label xml:lang="pt">numeral inteiro</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
+        <rdfs:label xml:lang="pt">dado de medição escalar</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:label xml:lang="pt">entidade de informação diretiva</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000034">
+        <rdfs:label xml:lang="pt">gatilho de tempo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000037">
+        <rdfs:label xml:lang="pt">gráfico de pontos</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000038">
+        <rdfs:label xml:lang="pt">gráfico</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000039">
+        <rdfs:label xml:lang="pt">tem rótulo de unidade de medida</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000055">
+        <rdfs:label xml:lang="pt">regra</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000057">
+        <rdfs:label xml:lang="pt">gráfico de contorno</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
+        <rdfs:label xml:lang="pt">algorítmo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000065">
+        <rdfs:label xml:lang="pt">interpretador de software</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000078">
+        <rdfs:label xml:lang="pt">especificação de status de curadoria</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000079">
+        <rdfs:label xml:lang="pt">gráfico de densidade</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000088">
+        <rdfs:label xml:lang="pt">relatório</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000096">
+        <rdfs:label xml:lang="pt">módulo de código fonte</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000098">
+        <rdfs:label xml:lang="pt">especificação de formato de dados</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100">
+        <rdfs:label xml:lang="pt">conjunto de dados</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000101">
+        <rdfs:label xml:lang="pt">imagem</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000102">
+        <rdfs:label xml:lang="pt">dados sobre parte de ontologia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+        <rdfs:label xml:lang="pt">especificação de plano</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <rdfs:label xml:lang="pt">dado de mensuração</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000129">
+        <rdfs:label xml:lang="pt">número de versão</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000131">
+        <rdfs:label xml:lang="pt">número serial</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000132">
+        <rdfs:label xml:lang="pt">número de lote</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000140">
+        <rdfs:label xml:lang="pt">dado de configuração</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000142">
+        <rdfs:label xml:lang="pt">menciona</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000143">
+        <rdfs:label xml:lang="pt">mencionado por</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000144">
+        <rdfs:label xml:lang="pt">entidade textual conclusão</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000178">
+        <rdfs:label xml:lang="pt">portador material de informação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000179">
+        <rdfs:label xml:lang="pt">histograma</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000180">
+        <rdfs:label xml:lang="pt">mapa de calor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000181">
+        <rdfs:label xml:lang="pt">diagram de Venn</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000183">
+        <rdfs:label xml:lang="pt">dendrograma</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000184">
+        <rdfs:label xml:lang="pt">gráfico distribuído</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000185">
+        <rdfs:label xml:lang="pt">fotografia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000186">
+        <rdfs:label xml:lang="pt">impressão fotográfica</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
+        <rdfs:label xml:lang="pt">denota</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000221">
+        <rdfs:label xml:lang="pt">é medição de qualidade de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000225">
+        <rdfs:label xml:lang="pt">especificação do motivo de obsolescência</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235">
+        <rdfs:label xml:lang="pt">denotado por</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000300">
+        <rdfs:label xml:lang="pt">entidade textual</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000301">
+        <rdfs:label xml:lang="pt">citação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000302">
+        <rdfs:label xml:lang="pt">identificação do autor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000303">
+        <rdfs:label xml:lang="pt">identificação institucional</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000304">
+        <rdfs:label xml:lang="pt">legenda</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000305">
+        <rdfs:label xml:lang="pt">título de documento</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000306">
+        <rdfs:label xml:lang="pt">tabela</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000307">
+        <rdfs:label xml:lang="pt">tabela de abreviações</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000308">
+        <rdfs:label xml:lang="pt">figura</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000309">
+        <rdfs:label xml:lang="pt">diagrama</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000311">
+        <rdfs:label xml:lang="pt">publicação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000312">
+        <rdfs:label xml:lang="pt">investigação sobre uma publicação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000313">
+        <rdfs:label xml:lang="pt">patente</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000314">
+        <rdfs:label xml:lang="pt">parte de documento</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000315">
+        <rdfs:label xml:lang="pt">resumo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000316">
+        <rdfs:label xml:lang="pt">introdução a publicação sobre investigação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000317">
+        <rdfs:label xml:lang="pt">seção de métodos</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000318">
+        <rdfs:label xml:lang="pt">seção de resultados</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000319">
+        <rdfs:label xml:lang="pt">seção de discussão de publicação sobre investigação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000320">
+        <rdfs:label xml:lang="pt">seção de referências</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000321">
+        <rdfs:label xml:lang="pt">lista de autores</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000322">
+        <rdfs:label xml:lang="pt">lista de instituições</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000323">
+        <rdfs:label xml:lang="pt">seção de contribuições de autores</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000324">
+        <rdfs:label xml:lang="pt">seção de agradecimentos</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000325">
+        <rdfs:label xml:lang="pt">nota de rodapé</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000326">
+        <rdfs:label xml:lang="pt">material suplementar para documento</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000327">
+        <rdfs:label xml:lang="pt">tabela de conteúdos</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000328">
+        <rdfs:label xml:lang="pt">tabela de figuras</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000329">
+        <rdfs:label xml:lang="pt">título corrente</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000330">
+        <rdfs:label xml:lang="pt">seção de direitos autorais</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000400">
+        <rdfs:label xml:lang="pt">dado de coordenadas espaciais cartesianas</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000401">
+        <rdfs:label xml:lang="pt">dado de coordenadas espaciais cartesianas unidimensionais</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000402">
+        <rdfs:label xml:lang="pt">dado de coordenadas espaciais cartesianas bidimensionais</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000403">
+        <rdfs:label xml:lang="pt">dado de coordenadas espaciais cartesianas tridimensionais</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000407">
+        <rdfs:label xml:lang="pt">tem rótulo de unidade de coordenada</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000408">
+        <rdfs:label xml:lang="pt">dado de medição de comprimento</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000409">
+        <rdfs:label xml:lang="pt">tipo de denotador</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000413">
+        <rdfs:label xml:lang="pt">é duração de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000414">
+        <rdfs:label xml:lang="pt">dados de medição de massa</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000415">
+        <rdfs:label xml:lang="pt">entidade textual hipótese</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000416">
+        <rdfs:label xml:lang="pt">dados de medição de tempo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000417">
+        <rdfs:label xml:lang="pt">é qualidade mensurada como</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000418">
+        <rdfs:label xml:lang="pt">é especificação de qualidade de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000419">
+        <rdfs:label xml:lang="pt">qualidade é especificada como</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000422">
+        <rdfs:label xml:lang="pt">endereço postal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000429">
+        <rdfs:label xml:lang="pt">endereço de email</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000442">
+        <rdfs:label xml:lang="pt">papel de autor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000443">
+        <rdfs:label xml:lang="pt">extração de item de dados de artigo de periódico</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000444">
+        <rdfs:label xml:lang="pt">processo de publicar</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000445">
+        <rdfs:label xml:lang="pt">documento em preparo para publicação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000572">
+        <rdfs:label xml:lang="pt">documentar</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000573">
+        <rdfs:label xml:lang="pt">gráfico de linhas</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000574">
+        <rdfs:label xml:lang="pt">atribuir identificador registrado centralmente</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000575">
+        <rdfs:label xml:lang="pt">associar informações a um identificador registrado centralmente em seu registro</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000577">
+        <rdfs:label xml:lang="pt">símbolo identificador registrado centralmente</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000578">
+        <rdfs:label xml:lang="pt">identificador registrado centralmente</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000579">
+        <rdfs:label xml:lang="pt">registro de identificador registrado centralmente</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000580">
+        <rdfs:label xml:lang="pt">procurar um identificador registrado centralmente</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000581">
+        <rdfs:label xml:lang="pt">tem selo de tempo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000582">
+        <rdfs:label xml:lang="pt">data de medição com carimbo de tempo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000583">
+        <rdfs:label xml:lang="pt">tem dado de medição</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000584">
+        <rdfs:label xml:lang="pt">conjunto de dados de medição de amostra de tempo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000590">
+        <rdfs:label xml:lang="pt">nome escrito</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000591">
+        <rdfs:label xml:lang="pt">método de software</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000592">
+        <rdfs:label xml:lang="pt">módulo de software</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000593">
+        <rdfs:label xml:lang="pt">biblioteca de software</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000594">
+        <rdfs:label xml:lang="pt">aplicação de software</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000595">
+        <rdfs:label xml:lang="pt">script de software</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000605">
+        <rdfs:label xml:lang="pt">abreviatura entidade textual</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000606">
+        <rdfs:label xml:lang="pt">seção de abreviação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000607">
+        <rdfs:label xml:lang="pt">seção de informação autores</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000608">
+        <rdfs:label xml:lang="pt">entidade textual informação do autor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000609">
+        <rdfs:label xml:lang="pt">seção de sumário do autor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000610">
+        <rdfs:label xml:lang="pt">entidade textual sumário de autor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000611">
+        <rdfs:label xml:lang="pt">seção de disponibilidade</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000612">
+        <rdfs:label xml:lang="pt">entidade textual disponibilidade</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000614">
+        <rdfs:label xml:lang="pt">entidade textual relatório de caso</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000615">
+        <rdfs:label xml:lang="pt">seção de conclusão</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000616">
+        <rdfs:label xml:lang="pt">seção de conflito de interesse</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000617">
+        <rdfs:label xml:lang="pt">entidade textual conflito de interesse</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000618">
+        <rdfs:label xml:lang="pt">seção de consentimento</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000619">
+        <rdfs:label xml:lang="pt">entidade textual consentimento</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000620">
+        <rdfs:label xml:lang="pt">seção de aprovação ética</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000621">
+        <rdfs:label xml:lang="pt">entidade textual aprovação ética</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000622">
+        <rdfs:label xml:lang="pt">seção de figuras</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000623">
+        <rdfs:label xml:lang="pt">seção de declaração de fonte de fomento</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000624">
+        <rdfs:label xml:lang="pt">entidade textual declaração de fonte de fomento</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000625">
+        <rdfs:label xml:lang="pt">seção de direções futuras</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000626">
+        <rdfs:label xml:lang="pt">entidade textual trabalhos futuros</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000627">
+        <rdfs:label xml:lang="pt">seção de anúncio do genoma</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000628">
+        <rdfs:label xml:lang="pt">entidade textual anúncio de genoma</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000629">
+        <rdfs:label xml:lang="pt">entidade textual palavra chave</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000630">
+        <rdfs:label xml:lang="pt">seção de palavras chave</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000631">
+        <rdfs:label xml:lang="pt">seção de limitações do estudo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000632">
+        <rdfs:label xml:lang="pt">entidade textual limitações do estudo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000633">
+        <rdfs:label xml:lang="pt">seção de materiais</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000634">
+        <rdfs:label xml:lang="pt">seção de notas</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000635">
+        <rdfs:label xml:lang="pt">seção de pacientes</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000636">
+        <rdfs:label xml:lang="pt">entidade textual paciente</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000637">
+        <rdfs:label xml:lang="pt">seção de história de pré-publicação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000638">
+        <rdfs:label xml:lang="pt">entidade textual histórico publicação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000639">
+        <rdfs:label xml:lang="pt">seção de requisitos</rdfs:label>
+        <rdfs:label xml:lang="pt">seção de trabalho relacionado</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000640">
+        <rdfs:label xml:lang="pt">entidade textual trabalhos relacionados</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000641">
+        <rdfs:label xml:lang="pt">seção de requisitos</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000642">
+        <rdfs:label xml:lang="pt">entidade textual requisitos</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000643">
+        <rdfs:label xml:lang="pt">entidade textual análise estatística</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000644">
+        <rdfs:label xml:lang="pt">seção de análise estatística</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000645">
+        <rdfs:label xml:lang="pt">seção de tabelas</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000646">
+        <rdfs:label xml:lang="pt">código postal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000647">
+        <rdfs:label xml:lang="pt">rota de entrega postal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000648">
+        <rdfs:label xml:lang="pt">código do plano de melhoria da zona</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000650">
+        <rdfs:label xml:lang="pt">processo de extração, transformação e carregamento do banco de dados</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000701">
+        <rdfs:label xml:lang="pt">seção de dados descritivos</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000702">
+        <rdfs:label xml:lang="pt">seção de resultados adicionais</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000703">
+        <rdfs:label xml:lang="pt">seção de participantes da pesquisa</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000704">
+        <rdfs:label xml:lang="pt">seção de métodos de mensuração</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000705">
+        <rdfs:label xml:lang="pt">seção de configurações da pesquisa</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000706">
+        <rdfs:label xml:lang="pt">seção de viés do estudo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000707">
+        <rdfs:label xml:lang="pt">resumo gráfico</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000708">
+        <rdfs:label xml:lang="pt">identificador ORCID</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020000">
+        <rdfs:label xml:lang="pt">identificador</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020001">
+        <rdfs:label xml:lang="pt">grafema</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020002">
+        <rdfs:label xml:lang="pt">enunciado</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020003">
+        <rdfs:label xml:lang="pt">qualidade de onda mecânica</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020004">
+        <rdfs:label xml:lang="pt">qualidade de escrita</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020005">
+        <rdfs:label xml:lang="pt">portador de escrita</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020006">
+        <rdfs:label xml:lang="pt">porção de energia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020007">
+        <rdfs:label xml:lang="pt">energia de som</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020008">
+        <rdfs:label xml:lang="pt">energia de enunciado</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020009">
+        <rdfs:label xml:lang="pt">oscilante</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020010">
+        <rdfs:label xml:lang="pt">processo de criar identificador</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020011">
+        <rdfs:label xml:lang="pt">processo de enunciado</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020013">
+        <rdfs:label xml:lang="pt">é referência emprestada a</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020014">
+        <rdfs:label xml:lang="pt">é referência anexada a</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020015">
+        <rdfs:label xml:lang="pt">nome pessoal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020016">
+        <rdfs:label xml:lang="pt">sobrenome</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020017">
+        <rdfs:label xml:lang="pt">nome de família</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020018">
+        <rdfs:label xml:lang="pt">é designado por</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020020">
+        <rdfs:label xml:lang="pt">conjunto de código</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000000">
+        <rdfs:label xml:lang="pt">módulo de ontologia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000001">
+        <rdfs:label xml:lang="pt">módulo de ontologia base</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000002">
+        <rdfs:label xml:lang="pt">modulo de ontologia de editores</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000003">
+        <rdfs:label xml:lang="pt">módulo de ontologia de versão principal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000004">
+        <rdfs:label xml:lang="pt">módulo de ontologia de ponte</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000005">
+        <rdfs:label xml:lang="pt">módulo de ontologia importado</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000006">
+        <rdfs:label xml:lang="pt">módulo de ontologia de subconjunto</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000007">
+        <rdfs:label xml:lang="pt">módulo de ontologia de subconjunto de curadoria</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000008">
+        <rdfs:label xml:lang="pt">módulo de ontologia de subconjunto de análise</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000009">
+        <rdfs:label xml:lang="pt">módulo de ontologia de subconjunto de camada única</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000010">
+        <rdfs:label xml:lang="pt">módulo de ontologia de subconjunto de exclusão</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000012">
+        <rdfs:label xml:lang="pt">módulo de ontologia de subconjunto de espécies</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000013">
+        <rdfs:label xml:lang="pt">módulo de ontologia inferido</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000014">
+        <rdfs:label xml:lang="pt">módulo de ontologia gerado</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000015">
+        <rdfs:label xml:lang="pt">módulo de ontologia gerado por modelo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_8000017">
+        <rdfs:label xml:lang="pt">ontology module subsetted by expressivity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
+        <rdfs:label xml:lang="pt">investigação</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
+        <rdfs:label xml:lang="pt">é entrada específica de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <rdfs:label xml:lang="pt">é saída específica de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
+        <rdfs:label xml:lang="pt">execução de estudo de design</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
+        <rdfs:label xml:lang="pt">transformação de dados</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
+        <rdfs:label xml:lang="pt">design de estudo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001025">
+        <rdfs:label xml:lang="pt">pressão</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
+        <rdfs:label xml:lang="pt">qualidade do objeto físico</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000079">
+        <rdfs:label xml:lang="pt">função de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000080">
+        <rdfs:label xml:lang="pt">qualidade de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000081">
+        <rdfs:label xml:lang="pt">papel de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000085">
+        <rdfs:label xml:lang="pt">tem função</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000086">
+        <rdfs:label xml:lang="pt">tem qualidade</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000087">
+        <rdfs:label xml:lang="pt">tem papel</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000091">
+        <rdfs:label xml:lang="pt">tem disposição</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000092">
+        <rdfs:label xml:lang="pt">disposição de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001000">
+        <rdfs:label xml:lang="pt">deriva de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001001">
+        <rdfs:label xml:lang="pt">deriva em</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001015">
+        <rdfs:label xml:lang="pt">localização de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <rdfs:label xml:lang="pt">localizado em</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002000">
+        <rdfs:label xml:lang="pt">limite 2D de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002002">
+        <rdfs:label xml:lang="pt">tem limite 2D</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
+        <rdfs:label xml:lang="pt">membro de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
+        <rdfs:label xml:lang="pt">tem membro</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
+        <rdfs:label xml:lang="pt">unidade de comprimemento</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000002">
+        <rdfs:label xml:lang="pt">unidade de massa</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
+        <rdfs:label xml:lang="pt">unidade de tempo</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
